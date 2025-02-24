@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tic Tac Toe Online</title>
+    <link rel="stylesheet" href="css/site.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.0/signalr.min.js" defer></script>
+    <script src="/js/site.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata&family=Jacquard+12&family=Ribeye+Marrow&family=Rye&family=Sigmar&family=Slackey&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Tic Tac Toe Online</h1>
+    <div id="winCounter">
+        <span class="win x">X: <span id="xWins">0</span></span>
+        <span class="win o">O: <span id="oWins">0</span></span>
+    </div>
+    <div class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <div id="restartContainer">
+        <button id="restartBtn">Restart</button>
+        <div id="readyStatus">Ready 0/2</div>
+    </div>
+    <div id="winnerMessage"></div>
+</body>
+</html>
